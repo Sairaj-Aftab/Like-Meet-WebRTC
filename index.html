@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="meet">
+        <div class="main-screen">
+            <video autoplay src="" id="s1"></video>
+
+            <div class="child-screen">
+                <video autoplay src="" id="s2"></video>
+            </div>
+
+            <ul class="icons">
+                <li class="call"><i class="fa fa-phone" aria-hidden="true"></i></li>
+                <li class="camera active"><i class="fa fa-video-camera" aria-hidden="true"></i></li>
+                <li class="mic"><i class="fa fa-microphone" aria-hidden="true"></i></li>
+                <li class="share-screen"><i class="fa fa-desktop" aria-hidden="true"></i></li>
+                <li class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+
+        <div class="call-manage">
+            <textarea id="offer-sdp" name=""></textarea>
+            <button id="create-offer">Create Offer</button>
+            <hr>
+            <textarea id="answer-sdp" name=""></textarea>
+            <button id="create-answer">Create Answer</button>
+            <hr>
+            <textarea id="add-answer-sdp" name=""></textarea>
+            <button id="add-answer">Add Answer</button>
+            <hr>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
