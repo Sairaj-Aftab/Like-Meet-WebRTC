@@ -49,8 +49,6 @@ const createOffers = async () => {
     peerConnection.onicecandidate = (e) => {
         if (e.candidate) {
             document.getElementById('offer-sdp').value = JSON.stringify(peerConnection.localDescription)
-        } else {
-            
         }
     }
 
